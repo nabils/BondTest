@@ -1,0 +1,13 @@
+﻿namespace BondTest
+
+struct DataPoint
+{
+    0: string Symbol;
+    1: double Delta;
+}
+
+struct Data
+{
+    0: vector<DataPoint> Points;
+	1: int64 TimeStamp;
+}
