@@ -26,41 +26,24 @@ namespace BondTest
 
     [global::Bond.Schema]
     [System.CodeDom.Compiler.GeneratedCode("gbc", "3.02")]
-    public partial class DataPoint
+    public partial class Data
     {
         [global::Bond.Id(0)]
         public string Symbol { get; set; }
 
         [global::Bond.Id(1)]
         public double Delta { get; set; }
-        
-        public DataPoint()
-            : this("BondTest.DataPoint", "DataPoint")
-        {}
 
-        protected DataPoint(string fullName, string name)
-        {
-            Symbol = string.Empty;
-        }
-    }
-
-    [global::Bond.Schema]
-    [System.CodeDom.Compiler.GeneratedCode("gbc", "3.02")]
-    public partial class Data
-    {
-        [global::Bond.Id(0)]
-        public List<DataPoint> Points { get; set; }
-
-        [global::Bond.Id(1)]
+        [global::Bond.Id(2)]
         public long TimeStamp { get; set; }
         
         public Data()
-            : this("BondTest.Data", "Data")
+            : this("BondTest.DataPoint", "DataPoint")
         {}
 
         protected Data(string fullName, string name)
         {
-            Points = new List<DataPoint>();
+            Symbol = string.Empty;
         }
     }
 } // BondTest

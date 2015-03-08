@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
-using Bond;
 using Microsoft.Isam.Esent.Interop;
 
 namespace BondTest
